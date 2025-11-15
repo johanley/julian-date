@@ -22,7 +22,7 @@ that day is -4713-11-24.)
 This little project provides conversion routines for Julian dates that:
 - don't restrict the date in any way
 - have a large number of unit tests
-- are not cryptic, and can be read with some confidence of correctness
+- are not cryptic, and can be read and understood 
 
 
 ## References
