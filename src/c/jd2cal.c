@@ -39,7 +39,7 @@ int the_month_len(int y, int m){
   at which the calendar cycle starts.  Counting forward in time from such any 
   such 'base' exploits the symmetry of the calendar's cycle.
 
-  Take a base as always falling on a N*400 years from January 1.0, year 0:
+  Take a base as always falling on a day N*400 years from January 1.0, year 0:
     JD of a base = 1_721_059.5 + N * 146_097, with  N = ...-2,-1,0,1,2,...
 
   There are 2 loops in this implementation, with a max number of 14 loop iterations.
