@@ -4,7 +4,7 @@ Julian dates let you do date calculations without messing about with the often c
 
 Tools are needed to convert between calendar dates and Julian dates.
 
-The problem is that most tools implement these conversions with algorithms that:
+The problem is that most tools implement these conversions using algorithms that:
 - don't support negative Julian dates
 - read like cryptic incantations addressed to a long-forgotten god
 
@@ -34,16 +34,15 @@ The *Explanatory Supplement* (2006), <a href='https://archive.org/details/explan
 shown <a href='img/expl-supp-2006.jpg'>here</a>.
 
 The above two references are considered authoritative by professional astronomers. 
-Those references cite <a href='https://dl.acm.org/doi/pdf/10.1145/364096.364097'>this 1968 paper</a> 
+Both of these references cite <a href='https://dl.acm.org/doi/pdf/10.1145/364096.364097'>this 1968 paper</a> 
 by Fliegel and van Flandern, published in the *Communications of the ACM*.
 An image of the core logic is <a href='img/comm-acm-1968.jpg'>here</a>.
 
 
 ## Modern Astronomy
 
-A desire for an ultra-compact implementation is understandable - for 1968. 
+A desire for an ultra-compact implementation is understandable for 1968. 
 But is it still appropriate in the modern world?
-
 Fundamental astronomy has made giant strides in the past decades:
 - measurements of stellar positions, proper motions, and radial velocities from instruments such as GAIA are remarkably precise
 - modern models of the Earth's precession and nutation provide accurate results stretching back tens of thousands of years
