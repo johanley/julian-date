@@ -1,7 +1,6 @@
 # julian-date
 
-Julian dates give you a way of replacing a calendar with a monotonic time scale, like a number line.
-It lets you do date calculations without messing about with the often complex details of traditional calendars.
+Julian dates let you do date calculations without messing about with the often complex details of traditional calendars.
 
 Tools are needed to convert between calendar dates and Julian dates.
 
@@ -12,7 +11,7 @@ The problem is that most tools implement these conversions with algorithms that:
 It's somewhat suprising that so many tools restrict the date: 
 - the <a href='https://www.iausofa.org/'>SOFA 2023-10-11</a> library from the IAU (International Astronomical Union)
 - the <a href='https://www.astropy.org/'>astropy 7.1</a> project, which uses SOFA
-- the <a href='https://aa.usno.navy.mil/software/novas_info'>NOVAS 3.1</> library from the U.S. Naval Observatory
+- the <a href='https://aa.usno.navy.mil/software/novas_info'>NOVAS 3.1</a> library from the U.S. Naval Observatory
 - the book <a href='img/astro-algo-1991.jpg'>*Astronomical Algorithms*</em> by Jean Meeus, 1991
 
 (Here's an <a href='img/jpl-2025-11-15.jpg'>example</a> taken from an <a href='https://ssd.jpl.nasa.gov/tools/jdc/#/cd'>online calculator</a> 
