@@ -5,7 +5,7 @@ Julian dates let you do date calculations without messing about with the often c
 Tools are needed to convert between calendar dates and Julian dates.
 
 The problem is that most tools implement these conversions using algorithms that:
-- don't support negative Julian dates
+- don't support negative Julian dates 
 - read like cryptic incantations addressed to a long-forgotten god
 
 It's somewhat suprising that so many tools restrict the date: 

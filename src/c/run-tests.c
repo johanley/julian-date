@@ -72,7 +72,7 @@ static void test_jd_to_cal(
   check_jd_to_date(expected_y, expected_m, expected_d, result_y, result_m, result_d, report);
 }
 
-/* Test the behaviour of the alternate implementations only for dates that precede JD = 0. */ 
+/* Dates that precede JD = 0. */ 
 static void test_both_directions_ancient_history(int y, int m, double d, double jd){
   test_jd_to_cal(jd, y, m, d, jd_to_cal, REPORT);
   test_cal_to_jd(y, m, d, jd, cal_to_jd, REPORT);
