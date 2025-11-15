@@ -5,7 +5,7 @@
 /*
  Algorithm for converting a Julian date to a date in the Gregorian calendar (C99).
 
- This alternate algorithm doesn't fail for dates in the deep past.
+ This algorithm doesn't fail for dates in the deep past.
  
  This implementation is self-contained; some of the static const data is repeated 
  in the implementation of the inverse function.
