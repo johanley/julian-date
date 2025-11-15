@@ -1,0 +1,249 @@
+PS C:\johanley\ProjectsVSCode\julian-date\src\c> date
+
+Saturday, November 15, 2025 4:08:30 PM
+
+
+PS C:\johanley\ProjectsVSCode\julian-date\src\c>    gcc $(Get-ChildItem -Path *.c -Name) -std=c99 -Wall -Werror -Wpedantic -o run_tests.exe
+PS C:\johanley\ProjectsVSCode\julian-date\src\c> ./run_tests.exe
+SOFA's tests.
+OK Expected: 2003-6-1.000000 Result: 2003-6-1.000000
+OK Expected: 2452791.500000 Result: 2452791.500000
+
+OK Expected: 1996-2-11.000000 Result: 1996-2-11.000000
+OK Expected: 2450124.500000 Result: 2450124.500000
+
+
+Explanatory Supplement, 1961, page  437.
+OK Expected: 1500-1-1.000000 Result: 1500-1-1.000000
+OK Expected: 2268923.500000 Result: 2268923.500000
+
+OK Expected: 1600-1-1.000000 Result: 1600-1-1.000000
+OK Expected: 2305447.500000 Result: 2305447.500000
+
+OK Expected: 1700-1-1.000000 Result: 1700-1-1.000000
+OK Expected: 2341972.500000 Result: 2341972.500000
+
+OK Expected: 1800-1-1.000000 Result: 1800-1-1.000000
+OK Expected: 2378496.500000 Result: 2378496.500000
+
+OK Expected: 1900-1-1.000000 Result: 1900-1-1.000000
+OK Expected: 2415020.500000 Result: 2415020.500000
+
+OK Expected: 1500-3-1.000000 Result: 1500-3-1.000000
+OK Expected: 2268982.500000 Result: 2268982.500000
+
+OK Expected: 1600-3-1.000000 Result: 1600-3-1.000000
+OK Expected: 2305507.500000 Result: 2305507.500000
+
+OK Expected: 1700-3-1.000000 Result: 1700-3-1.000000
+OK Expected: 2342031.500000 Result: 2342031.500000
+
+OK Expected: 1800-3-1.000000 Result: 1800-3-1.000000
+OK Expected: 2378555.500000 Result: 2378555.500000
+
+OK Expected: 1900-3-1.000000 Result: 1900-3-1.000000
+OK Expected: 2415079.500000 Result: 2415079.500000
+
+
+Guide de Donnees Astronomiques 2017, Bureau des longitudes, page 8.
+OK Expected: 1950-1-1.500000 Result: 1950-1-1.500000
+OK Expected: 2433283.000000 Result: 2433283.000000
+
+OK Expected: 2000-1-1.500000 Result: 2000-1-1.500000
+OK Expected: 2451545.000000 Result: 2451545.000000
+
+OK Expected: 2050-1-1.500000 Result: 2050-1-1.500000
+OK Expected: 2469808.000000 Result: 2469808.000000
+
+OK Expected: 2090-1-1.500000 Result: 2090-1-1.500000
+OK Expected: 2484418.000000 Result: 2484418.000000
+
+
+From Vondrak, Wallace, Capitaine 2011.
+OK Expected: -1374-5-3.578000 Result: -1374-5-3.578000
+OK Expected: 1219339.078000 Result: 1219339.078000
+
+
+Observer's Handbook, RASC, 2024, page 47.
+OK Expected: 2024-1-1.000000 Result: 2024-1-1.000000
+OK Expected: 2460310.500000 Result: 2460310.500000
+
+OK Expected: 2024-3-1.000000 Result: 2024-3-1.000000
+OK Expected: 2460370.500000 Result: 2460370.500000
+
+
+Astronomical Algorithms, Meeus 1991, page 61ff.
+OK Expected: 1957-10-4.810000 Result: 1957-10-4.810000
+OK Expected: 2436116.310000 Result: 2436116.310000
+
+OK Expected: 1987-6-19.500000 Result: 1987-6-19.500000
+OK Expected: 2446966.000000 Result: 2446966.000000
+
+
+From https://legacy-www.math.harvard.edu/computing/javascript/Calendar/index.html
+OK Expected: -8-1-1.500000 Result: -8-1-1.500000
+OK Expected: 1718138.000000 Result: 1718138.000000
+
+OK Expected: -101-1-1.500000 Result: -101-1-1.500000
+OK Expected: 1684171.000000 Result: 1684171.000000
+
+OK Expected: -799-1-1.500000 Result: -799-1-1.500000
+OK Expected: 1429232.000000 Result: 1429232.000000
+
+OK Expected: -800-1-1.500000 Result: -800-1-1.500000
+OK Expected: 1428866.000000 Result: 1428866.000000
+
+OK Expected: -801-1-1.500000 Result: -801-1-1.500000
+OK Expected: 1428501.000000 Result: 1428501.000000
+
+OK Expected: 99-12-31.500000 Result: 99-12-31.500000
+OK Expected: 1757584.000000 Result: 1757584.000000
+
+OK Expected: 100-1-1.500000 Result: 100-1-1.500000
+OK Expected: 1757585.000000 Result: 1757585.000000
+
+OK Expected: 100-1-31.500000 Result: 100-1-31.500000
+OK Expected: 1757615.000000 Result: 1757615.000000
+
+OK Expected: 100-2-1.500000 Result: 100-2-1.500000
+OK Expected: 1757616.000000 Result: 1757616.000000
+
+OK Expected: 100-2-28.500000 Result: 100-2-28.500000
+OK Expected: 1757643.000000 Result: 1757643.000000
+
+OK Expected: 100-3-1.500000 Result: 100-3-1.500000
+OK Expected: 1757644.000000 Result: 1757644.000000
+
+OK Expected: 3000-1-1.500000 Result: 3000-1-1.500000
+OK Expected: 2816788.000000 Result: 2816788.000000
+
+OK Expected: 30000-1-1.500000 Result: 30000-1-1.500000
+OK Expected: 12678335.000000 Result: 12678335.000000
+
+OK Expected: 100-1-1.500000 Result: 100-1-1.500000
+OK Expected: 1757585.000000 Result: 1757585.000000
+
+OK Expected: 101-1-1.500000 Result: 101-1-1.500000
+OK Expected: 1757950.000000 Result: 1757950.000000
+
+OK Expected: 200-1-1.500000 Result: 200-1-1.500000
+OK Expected: 1794109.000000 Result: 1794109.000000
+
+OK Expected: 300-1-1.500000 Result: 300-1-1.500000
+OK Expected: 1830633.000000 Result: 1830633.000000
+
+OK Expected: 400-1-1.500000 Result: 400-1-1.500000
+OK Expected: 1867157.000000 Result: 1867157.000000
+
+OK Expected: 700-1-1.500000 Result: 700-1-1.500000
+OK Expected: 1976730.000000 Result: 1976730.000000
+
+OK Expected: 800-1-1.500000 Result: 800-1-1.500000
+OK Expected: 2013254.000000 Result: 2013254.000000
+
+
+The origin of the Julian date is -4712-01-01 12h, in the Julian calendar, which is -4713-11-24 in the Gregorian calendar.
+OK Expected: -4713-11-24.500000 Result: -4713-11-24.500000
+OK Expected: 0.000000 Result: 0.000000
+
+
+The first date supported by the SOFA algorithm: -4799-01-01.
+OK Expected: -4799-1-1.000000 Result: -4799-1-1.000000
+OK Expected: -31738.500000 Result: -31738.500000
+
+
+Test dates near JD = 0. Test only the alternate implementations.
+OK Expected: -4712-1-1.500000 Result: -4712-1-1.500000
+OK Expected: 38.000000 Result: 38.000000
+
+OK Expected: -4712-1-1.500000 Result: -4712-1-1.500000
+OK Expected: 38.000000 Result: 38.000000
+
+OK Expected: -4713-12-31.500000 Result: -4713-12-31.500000
+OK Expected: 37.000000 Result: 37.000000
+
+OK Expected: -4713-12-1.500000 Result: -4713-12-1.500000
+OK Expected: 7.000000 Result: 7.000000
+
+OK Expected: -4713-11-30.500000 Result: -4713-11-30.500000
+OK Expected: 6.000000 Result: 6.000000
+
+OK Expected: -4713-11-24.500000 Result: -4713-11-24.500000
+OK Expected: 0.000000 Result: 0.000000
+
+OK Expected: -4713-11-24.000000 Result: -4713-11-24.000000
+OK Expected: -0.500000 Result: -0.500000
+
+OK Expected: -4713-11-23.000000 Result: -4713-11-23.000000
+OK Expected: -1.500000 Result: -1.500000
+
+OK Expected: -4713-1-1.500000 Result: -4713-1-1.500000
+OK Expected: -327.000000 Result: -327.000000
+
+OK Expected: -4714-1-1.500000 Result: -4714-1-1.500000
+OK Expected: -692.000000 Result: -692.000000
+
+OK Expected: -4715-1-1.500000 Result: -4715-1-1.500000
+OK Expected: -1057.000000 Result: -1057.000000
+
+OK Expected: -4716-1-1.500000 Result: -4716-1-1.500000
+OK Expected: -1423.000000 Result: -1423.000000
+
+OK Expected: -4717-1-1.500000 Result: -4717-1-1.500000
+OK Expected: -1788.000000 Result: -1788.000000
+
+OK Expected: -4718-1-1.500000 Result: -4718-1-1.500000
+OK Expected: -2153.000000 Result: -2153.000000
+
+OK Expected: -4719-1-1.500000 Result: -4719-1-1.500000
+OK Expected: -2518.000000 Result: -2518.000000
+
+OK Expected: -4720-1-1.500000 Result: -4720-1-1.500000
+OK Expected: -2884.000000 Result: -2884.000000
+
+OK Expected: -4721-1-1.500000 Result: -4721-1-1.500000
+OK Expected: -3249.000000 Result: -3249.000000
+
+OK Expected: -4800-1-1.500000 Result: -4800-1-1.500000
+OK Expected: -32104.000000 Result: -32104.000000
+
+OK Expected: -4801-1-1.500000 Result: -4801-1-1.500000
+OK Expected: -32469.000000 Result: -32469.000000
+
+OK Expected: -4900-1-1.500000 Result: -4900-1-1.500000
+OK Expected: -68628.000000 Result: -68628.000000
+
+
+Num failed tests: 0
+Num successful tests: 126
+
+Test entire years near the year 0.
+There's no detailed reporting in these cases.
+Testing every day in the year: -9
+Testing every day in the year: -8
+Testing every day in the year: -7
+Testing every day in the year: -6
+Testing every day in the year: -5
+Testing every day in the year: -4
+Testing every day in the year: -3
+Testing every day in the year: -2
+Testing every day in the year: -1
+Testing every day in the year: 0
+Testing every day in the year: 1
+Testing every day in the year: 2
+Testing every day in the year: 3
+Testing every day in the year: 4
+Testing every day in the year: 5
+Testing every day in the year: 6
+Testing every day in the year: 7
+Testing every day in the year: 8
+Testing every day in the year: 9
+Testing every day in the year: 10
+Testing every day in the year: 11
+Testing every day in the year: 12
+
+Num failed tests: 0
+Num successful tests: 16198
+
+Elapsed time: 5 milliseconds.
+PS C:\johanley\ProjectsVSCode\julian-date\src\c> 
