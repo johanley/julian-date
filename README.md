@@ -19,10 +19,10 @@ from the JPL that's just plain wrong.
 The input date is the origin of the Julian period as expressed in the Julian calendar. In the Gregorian calendar, 
 that day is -4713-11-24.)
 
-**This little project provides conversion routines for Julian dates that:
-- are not restricted in any way in the date
+This little project provides conversion routines for Julian dates that:
+- don't restrict the date in any way
 - have a large number of unit tests
-- are not cryptic, and can be read with some confidence of correctness**
+- are not cryptic, and can be read with some confidence of correctness
 
 
 ## References
@@ -41,7 +41,7 @@ An image of the core logic is <a href='img/comm-acm-1968.jpg'>here</a>.
 
 ## Modern Astronomy
 
-A desire for a compact-at-any-price implementation is understandable - for 1968. 
+A desire for an ultra-compact implementation is understandable - for 1968. 
 But is it still appropriate in the modern world?
 
 Fundamental astronomy has made giant strides in the past decades:
