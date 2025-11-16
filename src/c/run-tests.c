@@ -72,13 +72,6 @@ static void test_jd_to_cal(
   check_jd_to_date(expected_y, expected_m, expected_d, result_y, result_m, result_d, report);
 }
 
-/* Dates that precede JD = 0. */ 
-static void test_both_directions_ancient_history(int y, int m, double d, double jd){
-  test_jd_to_cal(jd, y, m, d, jd_to_cal, REPORT);
-  test_cal_to_jd(y, m, d, jd, cal_to_jd, REPORT);
-  printf("\n");
-}
-
 /* Test the conversions in both directions. */ 
 static void test_both_directions(int y, int m, double d, double jd){
   test_jd_to_cal(jd, y, m, d, jd_to_cal, REPORT);
@@ -190,33 +183,34 @@ static void run_all_tests(void){
     test_both_directions(700, 1, 1.5, 1976730);  
     test_both_directions(800, 1, 1.5, 2013254);
 
-    printf("\nThe origin of the Julian date is -4712-01-01 12h, in the Julian calendar, which is -4713-11-24 in the Gregorian calendar.\n");
+    printf("\nThe origin of the Julian date is -4712-01-01 12h, in the Julian calendar.\n");
+    printf("\nThat date is -4713-11-24 in the Gregorian calendar.\n");
     test_both_directions(-4713, 11, 24.5, 0.0);
 
     printf("\nThe first date supported by the SOFA algorithm: -4799-01-01.\n");
     test_both_directions(-4799, 1, 1.0, -31738.5);
 
-    printf("\nTest dates near JD = 0. Test only the alternate implementations.\n");
-    test_both_directions_ancient_history(-4712, 1, 1.5, 38.0);
-    test_both_directions_ancient_history(-4712, 1, 1.5, 38.0);
-    test_both_directions_ancient_history(-4713, 12, 31.5, 37.0);
-    test_both_directions_ancient_history(-4713, 12, 1.5, 7.0);
-    test_both_directions_ancient_history(-4713, 11, 30.5, 6.0);
-    test_both_directions_ancient_history(-4713, 11, 24.5, 0.0); //the JD=0 date
-    test_both_directions_ancient_history(-4713, 11, 24.0, -0.5);
-    test_both_directions_ancient_history(-4713, 11, 23.0, -1.5);
-    test_both_directions_ancient_history(-4713, 1, 1.5, -327.0);
-    test_both_directions_ancient_history(-4714, 1, 1.5, -327.0 - 365 * 1.0);
-    test_both_directions_ancient_history(-4715, 1, 1.5, -327.0 - 365 * 2.0);
-    test_both_directions_ancient_history(-4716, 1, 1.5, -327.0 - 365 * 2.0 - 366 * 1.0);
-    test_both_directions_ancient_history(-4717, 1, 1.5, -327.0 - 365 * 3.0 - 366 * 1.0);
-    test_both_directions_ancient_history(-4718, 1, 1.5, -327.0 - 365 * 4.0 - 366 * 1.0);
-    test_both_directions_ancient_history(-4719, 1, 1.5, -327.0 - 365 * 5.0 - 366 * 1.0);
-    test_both_directions_ancient_history(-4720, 1, 1.5, -327.0 - 365 * 5.0 - 366 * 2.0);
-    test_both_directions_ancient_history(-4721, 1, 1.5, -327.0 - 365 * 6.0 - 366 * 2.0);
-    test_both_directions_ancient_history(-4800, 1, 1.5, -327.0 - 365 * 65.0 - 366 * 22.0); //leap century year
-    test_both_directions_ancient_history(-4801, 1, 1.5, -327.0 - 365 * 66.0 - 366 * 22.0);
-    test_both_directions_ancient_history(-4900, 1, 1.5, -327.0 - 365 * (75.0 + 66.0) - 366 * (24.0 + 22.0)); //not a leap year
+    printf("\nTest dates near JD = 0.\n");
+    test_both_directions(-4712, 1, 1.5, 38.0);
+    test_both_directions(-4712, 1, 1.5, 38.0);
+    test_both_directions(-4713, 12, 31.5, 37.0);
+    test_both_directions(-4713, 12, 1.5, 7.0);
+    test_both_directions(-4713, 11, 30.5, 6.0);
+    test_both_directions(-4713, 11, 24.5, 0.0); //the JD=0 date
+    test_both_directions(-4713, 11, 24.0, -0.5);
+    test_both_directions(-4713, 11, 23.0, -1.5);
+    test_both_directions(-4713, 1, 1.5, -327.0);
+    test_both_directions(-4714, 1, 1.5, -327.0 - 365 * 1.0);
+    test_both_directions(-4715, 1, 1.5, -327.0 - 365 * 2.0);
+    test_both_directions(-4716, 1, 1.5, -327.0 - 365 * 2.0 - 366 * 1.0);
+    test_both_directions(-4717, 1, 1.5, -327.0 - 365 * 3.0 - 366 * 1.0);
+    test_both_directions(-4718, 1, 1.5, -327.0 - 365 * 4.0 - 366 * 1.0);
+    test_both_directions(-4719, 1, 1.5, -327.0 - 365 * 5.0 - 366 * 1.0);
+    test_both_directions(-4720, 1, 1.5, -327.0 - 365 * 5.0 - 366 * 2.0);
+    test_both_directions(-4721, 1, 1.5, -327.0 - 365 * 6.0 - 366 * 2.0);
+    test_both_directions(-4800, 1, 1.5, -327.0 - 365 * 65.0 - 366 * 22.0); //leap century year
+    test_both_directions(-4801, 1, 1.5, -327.0 - 365 * 66.0 - 366 * 22.0);
+    test_both_directions(-4900, 1, 1.5, -327.0 - 365 * (75.0 + 66.0) - 366 * (24.0 + 22.0)); //not a leap year
 
     printf("\nNum failed tests: %d\n", num_errors);
     printf("Num successful tests: %d\n", num_successful);

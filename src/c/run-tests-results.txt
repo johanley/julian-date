@@ -1,10 +1,10 @@
 PS C:\johanley\ProjectsVSCode\julian-date\src\c> date
 
-Saturday, November 15, 2025 4:08:30 PM
+Sunday, November 16, 2025 6:34:30 PM
 
 
 PS C:\johanley\ProjectsVSCode\julian-date\src\c>    gcc $(Get-ChildItem -Path *.c -Name) -std=c99 -Wall -Werror -Wpedantic -o run_tests.exe
-PS C:\johanley\ProjectsVSCode\julian-date\src\c> ./run_tests.exe
+PS C:\johanley\ProjectsVSCode\julian-date\src\c> .\run_tests.exe
 SOFA's tests.
 OK Expected: 2003-6-1.000000 Result: 2003-6-1.000000
 OK Expected: 2452791.500000 Result: 2452791.500000
@@ -142,7 +142,9 @@ OK Expected: 800-1-1.500000 Result: 800-1-1.500000
 OK Expected: 2013254.000000 Result: 2013254.000000
 
 
-The origin of the Julian date is -4712-01-01 12h, in the Julian calendar, which is -4713-11-24 in the Gregorian calendar.
+The origin of the Julian date is -4712-01-01 12h, in the Julian calendar.
+
+That date is -4713-11-24 in the Gregorian calendar.
 OK Expected: -4713-11-24.500000 Result: -4713-11-24.500000
 OK Expected: 0.000000 Result: 0.000000
 
@@ -152,7 +154,7 @@ OK Expected: -4799-1-1.000000 Result: -4799-1-1.000000
 OK Expected: -31738.500000 Result: -31738.500000
 
 
-Test dates near JD = 0. Test only the alternate implementations.
+Test dates near JD = 0.
 OK Expected: -4712-1-1.500000 Result: -4712-1-1.500000
 OK Expected: 38.000000 Result: 38.000000
 
@@ -245,5 +247,5 @@ Testing every day in the year: 12
 Num failed tests: 0
 Num successful tests: 16198
 
-Elapsed time: 5 milliseconds.
-PS C:\johanley\ProjectsVSCode\julian-date\src\c> 
+Elapsed time: 7 milliseconds.
+PS C:\johanley\ProjectsVSCode\julian-date\src\c>
