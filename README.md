@@ -4,9 +4,14 @@ Julian dates let you do date calculations without messing about with the often c
 
 Tools are needed to convert between calendar dates and Julian dates.
 
-The problem is that most tools implement these conversions using algorithms that:
+The problem is that most implementations of these conversions:
 - don't support negative Julian dates 
 - read like cryptic incantations addressed to a long-forgotten god
+
+This little project provides an algorithm for Julian dates that:
+- doesn't restrict the date in any way
+- has a large number of unit tests
+- is not cryptic, and can be read and understood 
 
 It's somewhat suprising that so many tools restrict the date: 
 - the <a href='https://www.iausofa.org/'>SOFA 2023-10-11</a> library from the IAU (International Astronomical Union)
@@ -19,10 +24,6 @@ from the JPL that's just plain wrong.
 The input date is the origin of the Julian period as expressed in the Julian calendar. In the Gregorian calendar, 
 that day is -4713-11-24.)
 
-This little project provides conversion routines for Julian dates that:
-- don't restrict the date in any way
-- have a large number of unit tests
-- are not cryptic, and can be read and understood 
 
 
 ## References
