@@ -13,7 +13,10 @@ This little project provides an algorithm for Julian dates that:
 - has a large number of unit tests
 - is not cryptic, and can be read and understood 
 
-Implementations are provided in C99 and Java.
+Implementations are provided in C99 and Java. 
+
+The implementation is for dates in the Gregorian calendar only.
+Creating a version for the Julian calendar is straightforward.
 
 It's somewhat suprising that so many tools restrict the date: 
 - the <a href='https://www.iausofa.org/'>SOFA 2023-10-11</a> library from the IAU (International Astronomical Union)
