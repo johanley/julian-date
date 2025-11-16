@@ -8,7 +8,7 @@ The problem is that most implementations of these conversions:
 - don't support negative Julian dates 
 - read like cryptic incantations addressed to a long-forgotten god
 
-This little project provides an algorithm for Julian dates that:
+This little project provides an algorithm (implemented in C99 and Java) for Julian dates that:
 - doesn't restrict the date in any way
 - has a large number of unit tests
 - is not cryptic, and can be read and understood 
