@@ -1,6 +1,6 @@
 PS C:\johanley\ProjectsVSCode\julian-date\src\c> date
 
-Sunday, November 16, 2025 6:34:30 PM
+Sunday, November 16, 2025 6:36:44 PM
 
 
 PS C:\johanley\ProjectsVSCode\julian-date\src\c>    gcc $(Get-ChildItem -Path *.c -Name) -std=c99 -Wall -Werror -Wpedantic -o run_tests.exe
@@ -143,7 +143,6 @@ OK Expected: 2013254.000000 Result: 2013254.000000
 
 
 The origin of the Julian date is -4712-01-01 12h, in the Julian calendar.
-
 That date is -4713-11-24 in the Gregorian calendar.
 OK Expected: -4713-11-24.500000 Result: -4713-11-24.500000
 OK Expected: 0.000000 Result: 0.000000
@@ -248,4 +247,4 @@ Num failed tests: 0
 Num successful tests: 16198
 
 Elapsed time: 7 milliseconds.
-PS C:\johanley\ProjectsVSCode\julian-date\src\c>
+PS C:\johanley\ProjectsVSCode\julian-date\src\c> 

@@ -184,7 +184,7 @@ static void run_all_tests(void){
     test_both_directions(800, 1, 1.5, 2013254);
 
     printf("\nThe origin of the Julian date is -4712-01-01 12h, in the Julian calendar.\n");
-    printf("\nThat date is -4713-11-24 in the Gregorian calendar.\n");
+    printf("That date is -4713-11-24 in the Gregorian calendar.\n");
     test_both_directions(-4713, 11, 24.5, 0.0);
 
     printf("\nThe first date supported by the SOFA algorithm: -4799-01-01.\n");
