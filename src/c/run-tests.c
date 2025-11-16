@@ -96,29 +96,29 @@ static void test_entire_year(int y, double jd_jan_0){
 
 /* Test every day of the year for years near the year 0. (These cases are easy to calculate manually.) */ 
 static void test_small_years(void) {
-    double base = 1721058.5;
-    test_entire_year(-9, base - 2*366 - 7*365);
-    test_entire_year(-8, base - 2*366 - 6*365);
-    test_entire_year(-7, base - 1*366 - 6*365);
-    test_entire_year(-6, base - 1*366 - 5*365);
-    test_entire_year(-5, base - 1*366 - 4*365);
-    test_entire_year(-4, base - 1*366 - 3*365);
-    test_entire_year(-3, base - 0*366 - 3*365);
-    test_entire_year(-2, base - 0*366 - 2*365);
-    test_entire_year(-1, base - 0*366 - 1*365);
-    test_entire_year(0, base + 0*366 + 0*365);
-    test_entire_year(1, base + 1*366 + 0*365);
-    test_entire_year(2, base + 1*366 + 1*365);
-    test_entire_year(3, base + 1*366 + 2*365);
-    test_entire_year(4, base + 1*366 + 3*365);
-    test_entire_year(5, base + 2*366 + 3*365);
-    test_entire_year(6, base + 2*366 + 4*365);
-    test_entire_year(7, base + 2*366 + 5*365);
-    test_entire_year(8, base + 2*366 + 6*365);
-    test_entire_year(9, base + 3*366 + 6*365);
-    test_entire_year(10, base + 3*366 + 7*365);
-    test_entire_year(11, base + 3*366 + 8*365);
-    test_entire_year(12, base + 3*366 + 9*365);
+    double jan0_year0 = 1721058.5; //alias for Dec 31, year -1
+    test_entire_year(-9, jan0_year0 - 2*366 - 7*365);
+    test_entire_year(-8, jan0_year0 - 2*366 - 6*365);
+    test_entire_year(-7, jan0_year0 - 1*366 - 6*365);
+    test_entire_year(-6, jan0_year0 - 1*366 - 5*365);
+    test_entire_year(-5, jan0_year0 - 1*366 - 4*365);
+    test_entire_year(-4, jan0_year0 - 1*366 - 3*365);
+    test_entire_year(-3, jan0_year0 - 0*366 - 3*365);
+    test_entire_year(-2, jan0_year0 - 0*366 - 2*365);
+    test_entire_year(-1, jan0_year0 - 0*366 - 1*365);
+    test_entire_year(0, jan0_year0 + 0*366 + 0*365);
+    test_entire_year(1, jan0_year0 + 1*366 + 0*365);
+    test_entire_year(2, jan0_year0 + 1*366 + 1*365);
+    test_entire_year(3, jan0_year0 + 1*366 + 2*365);
+    test_entire_year(4, jan0_year0 + 1*366 + 3*365);
+    test_entire_year(5, jan0_year0 + 2*366 + 3*365);
+    test_entire_year(6, jan0_year0 + 2*366 + 4*365);
+    test_entire_year(7, jan0_year0 + 2*366 + 5*365);
+    test_entire_year(8, jan0_year0 + 2*366 + 6*365);
+    test_entire_year(9, jan0_year0 + 3*366 + 6*365);
+    test_entire_year(10, jan0_year0 + 3*366 + 7*365);
+    test_entire_year(11, jan0_year0 + 3*366 + 8*365);
+    test_entire_year(12, jan0_year0 + 3*366 + 9*365);
   }
 
   

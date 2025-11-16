@@ -1,9 +1,4 @@
-PS C:\johanley\ProjectsVSCode\julian-date\src\c> date
-
-Sunday, November 16, 2025 6:36:44 PM
-
-
-PS C:\johanley\ProjectsVSCode\julian-date\src\c>    gcc $(Get-ChildItem -Path *.c -Name) -std=c99 -Wall -Werror -Wpedantic -o run_tests.exe
+PS C:\johanley\ProjectsVSCode\julian-date\src\c>  gcc $(Get-ChildItem -Path *.c -Name) -std=c99 -Wall -Werror -Wpedantic -o run_tests.exe  
 PS C:\johanley\ProjectsVSCode\julian-date\src\c> .\run_tests.exe
 SOFA's tests.
 OK Expected: 2003-6-1.000000 Result: 2003-6-1.000000
@@ -246,5 +241,5 @@ Testing every day in the year: 12
 Num failed tests: 0
 Num successful tests: 16198
 
-Elapsed time: 7 milliseconds.
-PS C:\johanley\ProjectsVSCode\julian-date\src\c> 
+Elapsed time: 12 milliseconds.
+PS C:\johanley\ProjectsVSCode\julian-date\src\c>
