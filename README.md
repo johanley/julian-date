@@ -29,7 +29,7 @@ The input date is the origin of the Julian period as expressed in the Julian cal
 that day is -4713-11-24.)
 
 
-## Origin of the Algorithm Requiring Julian date >= 0
+## The 1968 Algorithm Requiring Julian Date >= 0
 
 The *Explanatory Supplement* (1992), <a href='https://archive.org/details/explanatorysuppl0003unse/page/604/mode/2up'>page 604</a> 
 has an implementation that <a href='img/expl-supp-1992.jpg'>looks like this</a>.
