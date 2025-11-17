@@ -15,7 +15,7 @@ This little project provides an algorithm for Julian dates that:
 Implementations are provided in C99 and Java. 
 
 The implementation is for dates in the Gregorian calendar only.
-Creating a version for the Julian calendar is straightforward.
+(Creating a version for the Julian calendar is possible by changing its leap-year logic).
 
 It's somewhat suprising that so many tools restrict the date: 
 - the <a href='https://www.iausofa.org/'>SOFA 2023-10-11</a> library from the IAU (International Astronomical Union)
@@ -27,6 +27,20 @@ It's somewhat suprising that so many tools restrict the date:
 from the JPL that's just plain wrong.
 The input date is the origin of the Julian period as expressed in the Julian calendar. In the Gregorian calendar, 
 that day is -4713-11-24.)
+
+
+## Origin of the Algorithm Requiring Julian date >= 0
+
+The *Explanatory Supplement* (1992), <a href='https://archive.org/details/explanatorysuppl0003unse/page/604/mode/2up'>page 604</a> 
+has an implementation that <a href='img/expl-supp-1992.jpg'>looks like this</a>.
+
+The *Explanatory Supplement* (2006), <a href='https://archive.org/details/explanatorysuppl00pken/page/604/mode/2up'>page 604</a> repeats the same algorithm, 
+shown <a href='img/expl-supp-2006.jpg'>here</a>.
+
+The above two references are considered authoritative by professional astronomers. 
+Both of these references cite <a href='https://dl.acm.org/doi/pdf/10.1145/364096.364097'>this 1968 paper</a> 
+by Fliegel and van Flandern, published in the *Communications of the ACM*.
+An image of the core logic is <a href='img/comm-acm-1968.jpg'>here</a>.
 
 
 ## Modern Astronomy
@@ -49,27 +63,4 @@ There are two separate ideas, but their names are (unfortunately) nearly the sam
 
 Fun fact: they are named after two different Julians! 
 
-A second point of confusion is to assume that a Julian date is married to a particular *timescale*, such as UT1. It is not.
-
-## References
-
-The *Explanatory Supplement* (1992), <a href='https://archive.org/details/explanatorysuppl0003unse/page/604/mode/2up'>page 604</a> 
-has an implementation that <a href='img/expl-supp-1992.jpg'>looks like this</a>.
-
-The *Explanatory Supplement* (2006), <a href='https://archive.org/details/explanatorysuppl00pken/page/604/mode/2up'>page 604</a> repeats the same algorithm, 
-shown <a href='img/expl-supp-2006.jpg'>here</a>.
-
-The above two references are considered authoritative by professional astronomers. 
-Both of these references cite <a href='https://dl.acm.org/doi/pdf/10.1145/364096.364097'>this 1968 paper</a> 
-by Fliegel and van Flandern, published in the *Communications of the ACM*.
-An image of the core logic is <a href='img/comm-acm-1968.jpg'>here</a>.
-
-
-
-
-
-
-
-
-
-
+A second point of confusion is to assume that a Julian date is married to a particular *timescale*, such as UT1. That's not true.

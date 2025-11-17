@@ -241,5 +241,5 @@ Testing every day in the year: 12
 Num failed tests: 0
 Num successful tests: 16198
 
-Elapsed time: 12 milliseconds.
-PS C:\johanley\ProjectsVSCode\julian-date\src\c>
+Elapsed time: 5 milliseconds.
+PS C:\johanley\ProjectsVSCode\julian-date\src\c> 

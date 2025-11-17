@@ -8,7 +8,7 @@
 
  An example of running the tests in PowerShell on Windows, in the current directory:
    gcc $(Get-ChildItem -Path *.c -Name) -std=c99 -Wall -Werror -Wpedantic -o run_tests.exe
-   ./run_tests.exe 
+   .\run_tests.exe 
 */
 
 static int num_errors = 0;

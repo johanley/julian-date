@@ -33,13 +33,11 @@ int the_month_len(int y, int m){
 }
 
 /*
-  There's no restriction on the date.
-
   Mental model: use a 'base', a point in time occurring once every 400 years, 
-  at which the calendar cycle starts.  Counting forward in time from such any 
+  at which the calendar cycle starts. Counting forward in time from such any 
   such 'base' exploits the symmetry of the calendar's cycle.
 
-  Take a base as always falling on a day N*400 years from January 1.0, year 0:
+  Choose a base falling on a day N*400 years from January 1.0, year 0:
     JD of a base = 1_721_059.5 + N * 146_097, with  N = ...-2,-1,0,1,2,...
 
   There are 2 loops in this implementation, with a max number of 14 loop iterations.
@@ -51,7 +49,8 @@ void jd_to_cal(double jd, int *y, int *m, double *d) {
   int year = num_cycles * CYCLE_YEARS; // ..,-400, 0, 400,.. (the starting value)
   double jd_minus_base = jd - base_jd; //never neg
 
-  //THE GAME IS: to move this cursor forward from our base Jan 1.0 to the target jd
+  //THE GAME: is to move this cursor forward from our base Jan 1.0 taken
+  //as the zero-point, to the target jd_minus_base
   double cursor = 0.0; 
     
   //2. remainder-years: whole, completed years after the base 
@@ -64,7 +63,7 @@ void jd_to_cal(double jd, int *y, int *m, double *d) {
     cursor += more_days; //still on a Jan 1.0!
     year += more_years;
   }
-  //loop to find the rest of the remaining-years: at most 2 iterations here!
+  //loop to find the rest of the remainder-years: at most 2 iterations here!
   int year_so_far = year; //for use in the loop 
   for(int more = 0; more < CYCLE_YEARS; ++more ) { 
     int year_length = is_leap(year_so_far + more) ? LONG_YR : SHORT_YR;
@@ -78,8 +77,7 @@ void jd_to_cal(double jd, int *y, int *m, double *d) {
   int month = 0; //both a loop index AND a result-value
   double fractional_days = 0.0;
   for(month = 1; month <= 12; ++month) {
-    int month_length = MONTH_LEN[month - 1];
-    if (is_leap(year) && month == 2) ++month_length;
+    int month_length = the_month_len(year, month);
     if (cursor + month_length <= jd_minus_base) {
       cursor += month_length; //1st day of the next month
     }

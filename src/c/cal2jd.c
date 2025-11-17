@@ -9,7 +9,8 @@
  in the implementation of the inverse function.
 */
 
-static const double JAN_0_YEAR_0 = 1721058.5; //January 0.0 of year 0 = Dec 31.0 of year -1. 
+//January 0.0 of year 0 = Dec 31.0 of year -1. 
+static const double JAN_0_YEAR_0 = 1721058.5; 
 static const int CYCLE_YEARS = 400;
 static const int SHORT_YR = 365;
 static const int LONG_YR = 366;
@@ -39,16 +40,16 @@ double cal_to_jd(int y, int m, double d)  {
     num_366yrs += 1; //since year 0 is a leap year
   }
   int num_365yrs = y - num_366yrs;
-  double res = num_365yrs * SHORT_YR + num_366yrs * LONG_YR;    
+  double jd = num_365yrs * SHORT_YR + num_366yrs * LONG_YR;    
     
   //completed months
-  res += DAYS_IN_PRECEDING_MONTHS[m-1];   
+  jd += DAYS_IN_PRECEDING_MONTHS[m-1];   
   int is_leap = (y % 100 == 0) ? (y % 400 == 0) : (y % 4 == 0);
-  res += (is_leap && (m - 1) >= 2 ? 1 : 0); //'correct' for leap years  
+  jd += (is_leap && (m - 1) >= 2 ? 1 : 0); //'correct' for leap years  
     
-  res += d;  // the day of the month
+  jd += d;  // the day of the month
     
   //rebase to the usual origin of Julian date
-  res += JAN_0_YEAR_0;   
-  return res;
+  jd += JAN_0_YEAR_0;   
+  return jd;
 }
