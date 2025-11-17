@@ -3,8 +3,7 @@
 Julian dates let you do date calculations without messing about with the often complex details of traditional calendars.
 
 Tools are needed to convert between calendar dates and Julian dates.
-
-The problem is that most implementations of these conversions:
+The problem is that most implementations of such conversions:
 - don't support negative Julian dates 
 - read like cryptic incantations addressed to a long-forgotten god
 
