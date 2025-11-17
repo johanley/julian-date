@@ -96,29 +96,29 @@ static void test_entire_year(int y, double jd_jan_0){
 
 /* Test every day of the year for years near the year 0. (These cases are easy to calculate manually.) */ 
 static void test_small_years(void) {
-    double jan0_year0 = 1721058.5; //alias for Dec 31, year -1
-    test_entire_year(-9, jan0_year0 - 2*366 - 7*365);
-    test_entire_year(-8, jan0_year0 - 2*366 - 6*365);
-    test_entire_year(-7, jan0_year0 - 1*366 - 6*365);
-    test_entire_year(-6, jan0_year0 - 1*366 - 5*365);
-    test_entire_year(-5, jan0_year0 - 1*366 - 4*365);
-    test_entire_year(-4, jan0_year0 - 1*366 - 3*365);
-    test_entire_year(-3, jan0_year0 - 0*366 - 3*365);
-    test_entire_year(-2, jan0_year0 - 0*366 - 2*365);
-    test_entire_year(-1, jan0_year0 - 0*366 - 1*365);
-    test_entire_year(0, jan0_year0 + 0*366 + 0*365);
-    test_entire_year(1, jan0_year0 + 1*366 + 0*365);
-    test_entire_year(2, jan0_year0 + 1*366 + 1*365);
-    test_entire_year(3, jan0_year0 + 1*366 + 2*365);
-    test_entire_year(4, jan0_year0 + 1*366 + 3*365);
-    test_entire_year(5, jan0_year0 + 2*366 + 3*365);
-    test_entire_year(6, jan0_year0 + 2*366 + 4*365);
-    test_entire_year(7, jan0_year0 + 2*366 + 5*365);
-    test_entire_year(8, jan0_year0 + 2*366 + 6*365);
-    test_entire_year(9, jan0_year0 + 3*366 + 6*365);
-    test_entire_year(10, jan0_year0 + 3*366 + 7*365);
-    test_entire_year(11, jan0_year0 + 3*366 + 8*365);
-    test_entire_year(12, jan0_year0 + 3*366 + 9*365);
+    double jd_jan0_year0 = 1721058.5; //alias for Dec 31, year -1
+    test_entire_year(-9, jd_jan0_year0 - 2*366 - 7*365);
+    test_entire_year(-8, jd_jan0_year0 - 2*366 - 6*365);
+    test_entire_year(-7, jd_jan0_year0 - 1*366 - 6*365);
+    test_entire_year(-6, jd_jan0_year0 - 1*366 - 5*365);
+    test_entire_year(-5, jd_jan0_year0 - 1*366 - 4*365);
+    test_entire_year(-4, jd_jan0_year0 - 1*366 - 3*365);
+    test_entire_year(-3, jd_jan0_year0 - 0*366 - 3*365);
+    test_entire_year(-2, jd_jan0_year0 - 0*366 - 2*365);
+    test_entire_year(-1, jd_jan0_year0 - 0*366 - 1*365);
+    test_entire_year(0, jd_jan0_year0 + 0*366 + 0*365);
+    test_entire_year(1, jd_jan0_year0 + 1*366 + 0*365);
+    test_entire_year(2, jd_jan0_year0 + 1*366 + 1*365);
+    test_entire_year(3, jd_jan0_year0 + 1*366 + 2*365);
+    test_entire_year(4, jd_jan0_year0 + 1*366 + 3*365);
+    test_entire_year(5, jd_jan0_year0 + 2*366 + 3*365);
+    test_entire_year(6, jd_jan0_year0 + 2*366 + 4*365);
+    test_entire_year(7, jd_jan0_year0 + 2*366 + 5*365);
+    test_entire_year(8, jd_jan0_year0 + 2*366 + 6*365);
+    test_entire_year(9, jd_jan0_year0 + 3*366 + 6*365);
+    test_entire_year(10, jd_jan0_year0 + 3*366 + 7*365);
+    test_entire_year(11, jd_jan0_year0 + 3*366 + 8*365);
+    test_entire_year(12, jd_jan0_year0 + 3*366 + 9*365);
   }
 
   
@@ -236,5 +236,5 @@ static void add_timing (void (*func)(void)){
 /* I have renamed the 'main' function found in t_sofa_c.c, in order to replace it with this 'main'.  */
 int main(void){
   add_timing(run_all_tests);
-  return 0;
+  return 0; //not needed in C99
 }
