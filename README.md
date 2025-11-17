@@ -41,7 +41,7 @@ Fundamental astronomy has made giant strides in the past decades:
 Perhaps it's time to update the Julian date algorithm, and drop the restriction on dates.
 
 
-## Julian date != Julian calendar
+## A Confusion of Julians
 
 These are two separate ideas whose names are nearly the same:
 - a `Julian date` is a number of days since a day in the distant past
