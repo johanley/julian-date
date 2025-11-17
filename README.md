@@ -30,6 +30,26 @@ The input date is the origin of the Julian period as expressed in the Julian cal
 that day is -4713-11-24.)
 
 
+## Modern Astronomy
+
+A desire for an ultra-compact implementation is understandable for 1968. 
+But is it still appropriate in the modern world?
+Fundamental astronomy has made giant strides in the past decades:
+- measurements of stellar positions, proper motions, and radial velocities from instruments such as GAIA are remarkably precise
+- modern models of the Earth's precession and nutation provide accurate results stretching back tens of thousands of years
+
+Perhaps it's time to update the Julian date algorithm, and drop the restriction on dates.
+
+
+## Julian date != Julian calendar
+
+These are two separate ideas whose names are nearly the same:
+- a `Julian date` is a number of days since a day in the distant past
+- the `Julian calendar` is a calendar like our present day `Gregorian calendar`, but with slightly different rules
+- the `Julian date` is not married to the `Julian calendar`
+
+Fun fact: they are named after two different Julians! 
+
 
 ## References
 
@@ -45,15 +65,6 @@ by Fliegel and van Flandern, published in the *Communications of the ACM*.
 An image of the core logic is <a href='img/comm-acm-1968.jpg'>here</a>.
 
 
-## Modern Astronomy
-
-A desire for an ultra-compact implementation is understandable for 1968. 
-But is it still appropriate in the modern world?
-Fundamental astronomy has made giant strides in the past decades:
-- measurements of stellar positions, proper motions, and radial velocities from instruments such as GAIA are remarkably precise
-- modern models of the Earth's precession and nutation provide accurate results stretching back tens of thousands of years
-
-Perhaps it's time to update the Julian date algorithm, and drop the restriction on dates.
 
 
 
