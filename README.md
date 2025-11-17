@@ -43,9 +43,9 @@ Perhaps it's time to update the Julian date algorithm, and drop the restriction 
 
 ## A Confusion of Julians
 
-These are two separate ideas whose names are nearly the same:
-- a `Julian date` is a calendar like our present day `Gregorian calendar`, but with slightly different rules
-- the `Julian date` is number of days since a day in the distant past
+These are two separate ideas, but their names are (unfortunately) nearly the same:
+- a `Julian date` is a calendar like our present-day `Gregorian calendar`, but with slightly different rules
+- the `Julian date` is number of days since a day in the distant past (which can be expressed using different calendars)
 - the `Julian calendar` it married to the `Julian calendar`
 
 Fun fact: they are named after two different Julians! 
