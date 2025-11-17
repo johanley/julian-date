@@ -76,7 +76,7 @@ public final class JulianDateConvert {
       cursor += more_days; //still on a Jan 1.0!
       year += more_years;
     }
-    //loop to find the rest of the remaining-years: at most 2 iterations here!
+    //loop to find the rest of the remainder-years: at most 2 iterations here!
     int year_so_far = year; //for use in the loop 
     for(int more = 0; more < CYCLE_YEARS; ++more ) { 
       int year_length = isLeap(year_so_far + more) ? LONG_YR : SHORT_YR;
