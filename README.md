@@ -63,4 +63,4 @@ There are two separate ideas, but their names are (unfortunately) nearly the sam
 
 Fun fact: they are named after two different Julians! 
 
-A second point of confusion is to assume that a Julian date is married to a particular *timescale*, such as UT1. That's not true.
+A second point of confusion is the idea that Julian dates are defined using a specific *timescale*, such as UT1. That's not true.
